@@ -1,0 +1,114 @@
+.container {
+    display: flex;
+}
+
+
+
+.formulario {
+    margin-top: 80px;
+    margin-right: 10px;
+    padding: 30px;
+    background: black;
+    /* background-color:  rgba(255, 206, 9, 0.4); */
+    width: 50%;
+    height: 600px;
+    border-radius: 30px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+figure {
+    width: calc(50%-30px);
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.form-label {
+    color: white;
+    margin-bottom: 10px;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+
+.btn {
+    margin-top: 8px;
+    margin-left: 33%;
+    width: 33%;
+}
+
+.ng-invalid.ng-touched {
+    border-color: tomato;
+}
+
+.error {
+    color: tomato;
+    position: absolute;
+    z-index: 1;
+    margin-top: -15px;
+    font-size: 10px;
+}
+
+.ng-valid.ng-touched {
+
+    border-color: lightgreen;
+}
+
+
+@media(max-width:425px) {
+    .container {
+        display: block;
+    }
+
+    .formulario {
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        opacity: 0.9;
+
+    }
+
+    figure {
+        width: 100%;
+        margin: 0;
+    }
+
+
+}
+
+@media(max-width:1004px) {
+    .container {
+        display: block;
+    }
+
+    .formulario {
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        left: 0em;
+        top: 170px;
+        opacity: 0.9;
+        margin-top: 5px;
+
+    }
+
+    figure {
+        width: 100%;
+        margin: 0;
+    }
+
+}
+
+.alert a {
+    text-decoration: none;
+}

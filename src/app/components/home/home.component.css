@@ -1,0 +1,25 @@
+img {
+    display: block;
+    height: 300px;
+    width: 100%;
+    position: relative;
+
+}
+
+
+.card {
+    width: 40%;
+    box-shadow: 2px 5px 10px #dfdede;
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: rgba(151, 151, 151, 0.3);
+
+
+
+}
+
+.btn {
+    width: 100px;
+    margin: 3px;
+}
