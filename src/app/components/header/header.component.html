@@ -25,7 +25,8 @@
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" [routerLink]="['/miperfil']"><i class="fas fa-user-astronaut"></i> Mi
                         perfil</a></li>
-                <li><a class="dropdown-item" href="#"><i class="fas fa-cog"></i> Configuración</a></li>
+                <li><a class="dropdown-item" [routerLink]="['/useredit']"><i class="fas fa-cog"></i> Configuración</a>
+                </li>
                 <li><a class="dropdown-item" (click)="logOut()"><i class="fas fa-power-off"></i> Cerrar Sesión</a></li>
             </ul>
         </div>

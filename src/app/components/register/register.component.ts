@@ -14,7 +14,7 @@ export class RegisterComponent implements OnInit {
   formRegister: FormGroup;
 
 
-  public status: string;
+  status: string;
 
   constructor(
     private UsersService: UsersService,
@@ -64,7 +64,7 @@ export class RegisterComponent implements OnInit {
           this.status = 'success';
         } else {
 
-          this.status = 'error'
+          this.status = 'error';
 
         }
       })
