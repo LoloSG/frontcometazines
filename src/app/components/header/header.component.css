@@ -3,12 +3,14 @@
 img {
     display: block;
     width: 100%;
+    height: auto;
 }
 
 figure {
 
     margin: 0 auto;
     width: 20%;
+
 }
 
 .header-logo {

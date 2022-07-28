@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { User } from 'src/app/interfaces/user';
+import { UsersService } from 'src/app/services/users.service';
 
 @Component({
   selector: 'app-mi-perfil',
@@ -7,9 +10,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MiPerfilComponent implements OnInit {
 
-  constructor() { }
+  user: User | any;
+  token: string;
 
-  ngOnInit(): void {
+  constructor(
+    private usersService: UsersService,
+    private activatedRoute: ActivatedRoute
+  ) {
+    this.token = "";
   }
+
+  async ngOnInit(): Promise<void> {
+    this.token = await this.usersService.getToken();
+    this.user = await this.usersService.tokenDecode();
+  };
+
 
 }

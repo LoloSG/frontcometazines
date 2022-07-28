@@ -1,0 +1,126 @@
+body {
+
+    background: linear-gradient(to bottom, white, black);
+    padding: 40px;
+}
+
+hr {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+
+.card {
+
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.6);
+
+
+}
+
+
+.card-body {
+
+    display: flex;
+}
+
+.follows {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    margin-top: 45px;
+    margin-right: 25px;
+}
+
+.follows .btn {
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    color: white;
+    box-shadow: 2px 5px 10px #747474;
+    width: 200px;
+}
+
+.follows .btn:first-child {
+    margin-right: 10px;
+}
+
+/* .follows .btn:first-child:hover {
+    background-color: rgba(255, 206, 9);
+    color: black;
+    border: none;
+}
+
+.follows .btn:last-child:hover {
+    color: black;
+    border: none;
+} */
+
+.btn-danger {
+    background-color: rgb(234, 88, 62);
+    border: none;
+}
+
+
+
+.item-user .image-user {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin-top: 9px;
+    margin-right: 2px;
+    box-shadow: 2px 5px 10px #747474;
+    padding: 4px
+}
+
+
+.item-user .image-user img {
+
+    border-radius: 50%;
+    width: 100%;
+}
+
+.user-name {
+    margin-left: 20px;
+    margin-top: 13px;
+}
+
+.user-name p:first-child a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.user-name p:first-child a:hover {
+    text-decoration: none;
+    color: rgba(255, 206, 9);
+    font-weight: bold;
+
+}
+
+
+.pagination li {
+    margin: 20px;
+    width: 100px;
+    color: black;
+    text-decoration: none;
+
+    ;
+}
+
+.pagination li a {
+
+    color: rgba(255, 206, 9);
+
+
+    text-decoration: none;
+}
+
+
+.pagination li a:hover {
+
+    color: black;
+
+
+    text-decoration: none;
+}

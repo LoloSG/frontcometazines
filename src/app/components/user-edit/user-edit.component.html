@@ -1,1 +1,41 @@
-<p>user-edit works!</p>
+<div class="container">
+
+
+    <div class="formulario">
+        <h1>Configuración de usuario <i class="fa-solid fa-wrench"></i></h1>
+        <form #userEditForm="ngForm" (ngSubmit)="onSubmit()">
+
+            <div class="mb-3">
+                <label class="form-label" for="name">Nombre</label>
+                <input class="form-control" type="text" name="name" [(ngModel)]="user.name" required>
+
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="surname">Apellidos</label>
+                <input class="form-control" type="text" name="surname" [(ngModel)]="user.surname" required>
+
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="nick">Apodo</label>
+                <input class="form-control" type="text" name="nick" [(ngModel)]="user.nick" required>
+
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-control" type="text" name="email" [(ngModel)]="user.email" required>
+
+            </div>
+
+            <input type="submit" value="Actualizar" class="btn btn-outline-warning">
+
+
+        </form>
+    </div>
+
+    <figure>
+        <img src="https://static.vecteezy.com/system/resources/previews/001/202/550/original/punk-girl-png.png" alt="">
+    </figure>
+</div>

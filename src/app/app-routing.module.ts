@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { GenteComponent } from './components/gente/gente.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { MiPerfilComponent } from './components/mi-perfil/mi-perfil.component';
@@ -11,8 +12,10 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'miperfil', component: MiPerfilComponent },
-  { path: 'useredit', component: UserEditComponent }
+  { path: 'miperfil/:id', component: MiPerfilComponent },
+  { path: 'useredit', component: UserEditComponent },
+  { path: 'gente', component: GenteComponent },
+  { path: 'gente/:page', component: GenteComponent }
 ];
 
 @NgModule({

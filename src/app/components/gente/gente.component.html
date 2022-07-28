@@ -1,0 +1,73 @@
+<body>
+    <div class="container">
+
+        <div class="col-lg-8">
+            <h1 class="h1-strong">Gente</h1>
+            <hr>
+
+
+
+
+            <div class="people">
+                <div *ngFor="let user of users" class="item-user">
+                    <div class="card card-default">
+                        <div class="card-body">
+                            <div class="image-user pull-start">
+                                <a href="#">
+                                    <img [src]="'http://localhost:3000/uploads/albums/' + user.image"
+                                        *ngIf="user.image">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/727/727894.png"
+                                        *ngIf="!user.image">
+
+                                </a>
+
+
+                            </div>
+                            <div class="user-name pull-left">
+                                <p>
+                                    <a href="#">
+                                        {{user.name + ' ' + user.surname }}
+                                    </a>
+                                </p>
+                                <p>
+                                    {{user.nick}}
+                                </p>
+                            </div>
+
+                        </div>
+                        <!-- Seguir dejar de seguir -->
+                        <div class="follows">
+                            <button class="btn btn-dark" *ngIf="follows.indexOf(user._id) < 0">
+
+                                Seguir
+
+                            </button>
+
+
+
+                            <button class="btn btn-dark" *ngIf="follows.indexOf(user._id) >= 0"
+                                (mouseenter)="mouseEnter(user._id)" (mouseleave)="mouseLeave(user._id)"
+                                [class.btn-danger]="user._id == followUserOver">
+
+
+                                <ng-template #following>
+                                    <span>Siguiendo</span>
+                                </ng-template>
+
+                                <span *ngIf="user._id == followUserOver; else following"> Dejar de seguir</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <ul class="pagination">
+            <li class="btn btn-outline-warning" *ngIf="page > 1"><a [routerLink]="['/gente', prev_page]">Anterior</a>
+            </li>
+            <li class="btn btn-outline-warning" *ngIf="pages != page"><a
+                    [routerLink]="['/gente', next_page]">Siguiente</a></li>
+        </ul>
+    </div>
+</body>

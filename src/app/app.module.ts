@@ -12,6 +12,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { UserEditComponent } from './components/user-edit/user-edit.component';
 import { MiPerfilComponent } from './components/mi-perfil/mi-perfil.component';
+import { GenteComponent } from './components/gente/gente.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MiPerfilComponent } from './components/mi-perfil/mi-perfil.component';
     HeaderComponent,
     FooterComponent,
     UserEditComponent,
-    MiPerfilComponent
+    MiPerfilComponent,
+    GenteComponent
   ],
   imports: [
     BrowserModule,

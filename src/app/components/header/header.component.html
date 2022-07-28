@@ -20,10 +20,11 @@
         <div class="dropdown" *ngIf="token">
             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                (user.name)
+                {{user?.name}}
             </button>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" [routerLink]="['/miperfil']"><i class="fas fa-user-astronaut"></i> Mi
+                <li><a class="dropdown-item" [routerLink]="['/miperfil', user?.sub]"><i
+                            class="fas fa-user-astronaut"></i> Mi
                         perfil</a></li>
                 <li><a class="dropdown-item" [routerLink]="['/useredit']"><i class="fas fa-cog"></i> Configuración</a>
                 </li>
@@ -44,19 +45,22 @@
 
                 <li class="nav-item-warning">
                     <a class="nav-link" aria-current="page" [routerLink]="['/home']">
-                        <i class="fas fa-space-shuttle"></i>
-                        Inicio</a>
+                        <!-- <i class="fas fa-space-shuttle"></i> -->
+                        Inicio
+                    </a>
                 </li>
 
                 <li class="nav-item-warning">
                     <a class="nav-link" aria-current="page" href="">
-                        <i class="fas fa-meteor"></i>
-                        Timeline</a>
+                        <!-- <i class="fas fa-meteor"></i> -->
+                        Timeline
+                    </a>
                 </li>
                 <li class="nav-item-warning">
-                    <a class="nav-link" aria-current="page" href="">
-                        <i class="fas fa-user-astronaut"></i>
-                        Gente</a>
+                    <a class="nav-link" aria-current="page" [routerLink]="['/gente/1']">
+                        <!-- <i class="fas fa-user-astronaut"></i> -->
+                        Gente
+                    </a>
                 </li>
             </ul>
 
